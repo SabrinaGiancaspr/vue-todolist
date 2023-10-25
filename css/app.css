@@ -1,3 +1,60 @@
-.sbarra{
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header-container{
+  padding: 14px 24px;
+  margin: 5px;
+  font-size: 35px;
+  font-weight: bold;
+  background-color: #FFFFFF;
+}
+
+.title{
+  display: inline-block;
+  vertical-align: top;
+  margin-bottom: 8px;
+}
+
+main{
+  background-color: #F6F8F9
+}
+
+.container{
+  margin-top: 30px;
+  padding-top: 10px;
+  max-width: 900px;
+  min-height: 500px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background-color: white;
+  border-radius: 2%;
+}
+
+.form-floating {
+  display: flex;
+  align-items: center;
+}
+
+.form-control {
+  margin-right: 10px;
+  width: 200px;
+}
+
+.btn {
+  margin: 0;
+  cursor: pointer;
+}
+
+li{
+  font-size: 20px;
+  cursor: pointer;
+  color: red;
+}
+
+.sbarra {
   text-decoration: line-through;
 }
