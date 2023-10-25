@@ -12,7 +12,7 @@
   <body>
     <section>
       <div id="app">
-        <input type="text" v-model = 'newText'>
+        <input @keyup.enter = 'addTodoList()' type="text" v-model = 'newText'>
         <button @click = 'addTodoList()'>clicck</button>
         <ul>
           <li v-for="(list,index) in todo" :class="list.done === true ? 'sbarra' : '' ">
