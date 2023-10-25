@@ -16,12 +16,22 @@ app({
           done: false,
         },
       ],
+      newList: '',
+      newText: '',
     };
   },
 
-  methods:{
-    remove(index){
-      this.todo.splice(index,1)
-    }
-  }
+  methods: {
+    remove(index) {
+      this.todo.splice(index, 1);
+    },
+    addTodoList() {
+      this.newList = {
+        text: this.newText,
+        done: false,
+      };
+      this.todo.unshift(this.newList);
+      this.newText = ' ';
+    },
+  },
 }).mount('#app');

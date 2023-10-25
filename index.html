@@ -12,6 +12,8 @@
   <body>
     <section>
       <div id="app">
+        <input type="text" v-model = 'newText'>
+        <button @click = 'addTodoList()'>clicck</button>
         <ul>
           <li v-for="(list,index) in todo" :class="list.done === true ? 'sbarra' : '' ">
             {{list.text}} <i class="fa-solid fa-xmark" @click = 'remove(index)'></i>
