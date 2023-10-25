@@ -15,7 +15,7 @@
         <input @keyup.enter = 'addTodoList()' type="text" v-model = 'newText'>
         <button @click = 'addTodoList()'>clicck</button>
         <ul>
-          <li v-for="(list,index) in todo" :class="list.done === true ? 'sbarra' : '' ">
+          <li @click = 'invert(index)' v-for="(list,index) in todo" :class="list.done === true ? 'sbarra' : '' ">
             {{list.text}} <i class="fa-solid fa-xmark" @click = 'remove(index)'></i>
           </li>
         </ul>
