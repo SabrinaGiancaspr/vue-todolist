@@ -18,4 +18,10 @@ app({
       ],
     };
   },
+
+  methods:{
+    remove(index){
+      this.todo.splice(index,1)
+    }
+  }
 }).mount('#app');
